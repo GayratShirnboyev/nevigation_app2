@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'page1.dart';
 
 class Home extends StatefulWidget {
-  const Home({super.key}) : super(key: key);  
+   const Home({Key? key}) : super(key: key);
 
   @override
   State<Home> createState() => _HomeState();
@@ -17,14 +17,9 @@ class _HomeState extends State<Home> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image(
-              image: NetworkImage(
-                  'https://github.com/GayratShirnboyev/nevigation_app2.git'),
-              width: 30,
-              height: 30,
-            ),
+         
             TextButton(
-              child: Text('about'),
+              child: Text('BARSELONA'),
               onPressed: () {
                 Navigator.push(
                   context, MaterialPageRoute(builder: ((context) {
